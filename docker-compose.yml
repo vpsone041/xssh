@@ -3,5 +3,4 @@ services:
   web:
     build: 
     ports:
-      - lscpu
       - "80:80"
